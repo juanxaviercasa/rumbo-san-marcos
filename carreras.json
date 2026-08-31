@@ -1,0 +1,1532 @@
+[
+  {
+    "code": "MED001",
+    "name": "Medicina Humana",
+    "faculty": "Medicina",
+    "block": "A",
+    "referentialScore": 1750,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 1.0,
+      "physics": 0.6,
+      "chemistry": 0.8,
+      "biology": 1.0,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.3,
+      "civics": 0.2
+    }
+  },
+  {
+    "code": "ODO001",
+    "name": "Odontología",
+    "faculty": "Odontología",
+    "block": "A",
+    "referentialScore": 1550,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.9,
+      "physics": 0.5,
+      "chemistry": 0.7,
+      "biology": 1.0,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.3,
+      "civics": 0.2
+    }
+  },
+  {
+    "code": "FAR001",
+    "name": "Farmacia y Bioquímica",
+    "faculty": "Farmacia y Bioquímica",
+    "block": "A",
+    "referentialScore": 1300,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.8,
+      "physics": 0.5,
+      "chemistry": 1.0,
+      "biology": 0.9,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.3,
+      "civics": 0.2
+    }
+  },
+  {
+    "code": "ENF001",
+    "name": "Enfermería",
+    "faculty": "Enfermería",
+    "block": "A",
+    "referentialScore": 1200,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.7,
+      "physics": 0.4,
+      "chemistry": 0.6,
+      "biology": 1.0,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.3,
+      "civics": 0.2
+    }
+  },
+  {
+    "code": "PSI001",
+    "name": "Psicología",
+    "faculty": "Psicología",
+    "block": "E",
+    "referentialScore": 1400,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.6,
+      "physics": 0.3,
+      "chemistry": 0.4,
+      "biology": 0.7,
+      "spanish": 0.8,
+      "history": 0.5,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "ING_IND001",
+    "name": "Ingeniería Industrial",
+    "faculty": "Ingeniería Industrial",
+    "block": "B",
+    "referentialScore": 1450,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 1.0,
+      "physics": 0.9,
+      "chemistry": 0.7,
+      "biology": 0.3,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.4,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "ING_SIS001",
+    "name": "Ingeniería de Sistemas",
+    "faculty": "Ingeniería de Sistemas e Informática",
+    "block": "B",
+    "referentialScore": 1400,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 1.0,
+      "physics": 0.8,
+      "chemistry": 0.5,
+      "biology": 0.3,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.4,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "ING_ELE001",
+    "name": "Ingeniería Electrónica",
+    "faculty": "Ingeniería Electrónica y Eléctrica",
+    "block": "B",
+    "referentialScore": 1350,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 1.0,
+      "physics": 1.0,
+      "chemistry": 0.6,
+      "biology": 0.3,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.4,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "ING_CIV001",
+    "name": "Ingeniería Civil",
+    "faculty": "Ingeniería Civil",
+    "block": "B",
+    "referentialScore": 1300,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 1.0,
+      "physics": 0.9,
+      "chemistry": 0.6,
+      "biology": 0.3,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.5,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "ING_MIN001",
+    "name": "Ingeniería de Minas",
+    "faculty": "Ingeniería de Minas",
+    "block": "B",
+    "referentialScore": 1200,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 1.0,
+      "physics": 0.9,
+      "chemistry": 0.8,
+      "biology": 0.4,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.6,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "ING_MET001",
+    "name": "Ingeniería Metalúrgica",
+    "faculty": "Ingeniería Metalúrgica",
+    "block": "B",
+    "referentialScore": 950,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 1.0,
+      "physics": 0.9,
+      "chemistry": 0.8,
+      "biology": 0.3,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.5,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "ING_GEO001",
+    "name": "Ingeniería Geológica",
+    "faculty": "Ingeniería Geológica, Minera y Metalúrgica",
+    "block": "B",
+    "referentialScore": 1000,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 1.0,
+      "physics": 0.8,
+      "chemistry": 0.7,
+      "biology": 0.4,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.7,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "ING_TEX001",
+    "name": "Ingeniería Textil",
+    "faculty": "Ingeniería Textil y Confecciones",
+    "block": "B",
+    "referentialScore": 900,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.9,
+      "physics": 0.7,
+      "chemistry": 0.6,
+      "biology": 0.3,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.4,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "ING_ALI001",
+    "name": "Ingeniería Agroindustrial",
+    "faculty": "Ingeniería Agroindustrial y Alimentos",
+    "block": "B",
+    "referentialScore": 1050,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.8,
+      "physics": 0.6,
+      "chemistry": 0.8,
+      "biology": 0.7,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.4,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "MAT001",
+    "name": "Matemática",
+    "faculty": "Ciencias Matemáticas",
+    "block": "C",
+    "referentialScore": 1050,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 1.0,
+      "physics": 0.7,
+      "chemistry": 0.5,
+      "biology": 0.3,
+      "spanish": 0.6,
+      "history": 0.3,
+      "geography": 0.3,
+      "civics": 0.2
+    }
+  },
+  {
+    "code": "FIS001",
+    "name": "Física",
+    "faculty": "Ciencias Físicas",
+    "block": "C",
+    "referentialScore": 1000,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 1.0,
+      "physics": 1.0,
+      "chemistry": 0.6,
+      "biology": 0.3,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.3,
+      "civics": 0.2
+    }
+  },
+  {
+    "code": "QUI001",
+    "name": "Química",
+    "faculty": "Química e Ingeniería Química",
+    "block": "C",
+    "referentialScore": 950,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.9,
+      "physics": 0.7,
+      "chemistry": 1.0,
+      "biology": 0.6,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.3,
+      "civics": 0.2
+    }
+  },
+  {
+    "code": "BIO001",
+    "name": "Biología",
+    "faculty": "Ciencias Biológicas",
+    "block": "C",
+    "referentialScore": 900,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.7,
+      "physics": 0.5,
+      "chemistry": 0.7,
+      "biology": 1.0,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.4,
+      "civics": 0.2
+    }
+  },
+  {
+    "code": "EST001",
+    "name": "Estadística",
+    "faculty": "Ciencias Matemáticas",
+    "block": "C",
+    "referentialScore": 850,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 1.0,
+      "physics": 0.5,
+      "chemistry": 0.4,
+      "biology": 0.3,
+      "spanish": 0.6,
+      "history": 0.3,
+      "geography": 0.3,
+      "civics": 0.2
+    }
+  },
+  {
+    "code": "INV_OPE001",
+    "name": "Investigación Operativa",
+    "faculty": "Ciencias Matemáticas",
+    "block": "C",
+    "referentialScore": 800,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 1.0,
+      "physics": 0.6,
+      "chemistry": 0.4,
+      "biology": 0.3,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.3,
+      "civics": 0.2
+    }
+  },
+  {
+    "code": "CON001",
+    "name": "Contabilidad",
+    "faculty": "Ciencias Contables",
+    "block": "D",
+    "referentialScore": 1300,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.9,
+      "physics": 0.3,
+      "chemistry": 0.3,
+      "biology": 0.3,
+      "spanish": 0.7,
+      "history": 0.5,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "ECO001",
+    "name": "Economía",
+    "faculty": "Ciencias Económicas",
+    "block": "D",
+    "referentialScore": 1250,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.9,
+      "physics": 0.3,
+      "chemistry": 0.3,
+      "biology": 0.3,
+      "spanish": 0.7,
+      "history": 0.6,
+      "geography": 0.6,
+      "civics": 0.5
+    }
+  },
+  {
+    "code": "ADM001",
+    "name": "Administración",
+    "faculty": "Ciencias Administrativas",
+    "block": "D",
+    "referentialScore": 1200,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.8,
+      "physics": 0.3,
+      "chemistry": 0.3,
+      "biology": 0.3,
+      "spanish": 0.7,
+      "history": 0.5,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "TUR001",
+    "name": "Turismo",
+    "faculty": "Ciencias Administrativas",
+    "block": "D",
+    "referentialScore": 1150,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.7,
+      "physics": 0.3,
+      "chemistry": 0.3,
+      "biology": 0.3,
+      "spanish": 0.8,
+      "history": 0.7,
+      "geography": 0.7,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "GEO001",
+    "name": "Gestión y Políticas Públicas",
+    "faculty": "Ciencias Políticas y Relaciones Internacionales",
+    "block": "D",
+    "referentialScore": 1100,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.6,
+      "physics": 0.2,
+      "chemistry": 0.2,
+      "biology": 0.2,
+      "spanish": 0.8,
+      "history": 0.7,
+      "geography": 0.6,
+      "civics": 0.6
+    }
+  },
+  {
+    "code": "DER001",
+    "name": "Derecho",
+    "faculty": "Derecho y Ciencia Política",
+    "block": "E",
+    "referentialScore": 1450,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.5,
+      "physics": 0.2,
+      "chemistry": 0.2,
+      "biology": 0.3,
+      "spanish": 1.0,
+      "history": 0.8,
+      "geography": 0.6,
+      "civics": 0.8
+    }
+  },
+  {
+    "code": "LIT001",
+    "name": "Literatura",
+    "faculty": "Letras y Ciencias Humanas",
+    "block": "E",
+    "referentialScore": 1200,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.4,
+      "physics": 0.2,
+      "chemistry": 0.2,
+      "biology": 0.3,
+      "spanish": 1.0,
+      "history": 0.7,
+      "geography": 0.5,
+      "civics": 0.5
+    }
+  },
+  {
+    "code": "FIL001",
+    "name": "Filosofía",
+    "faculty": "Letras y Ciencias Humanas",
+    "block": "E",
+    "referentialScore": 850,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.4,
+      "physics": 0.2,
+      "chemistry": 0.2,
+      "biology": 0.3,
+      "spanish": 0.9,
+      "history": 0.8,
+      "geography": 0.5,
+      "civics": 0.7
+    }
+  },
+  {
+    "code": "HIS001",
+    "name": "Historia",
+    "faculty": "Ciencias Sociales",
+    "block": "E",
+    "referentialScore": 900,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.4,
+      "physics": 0.2,
+      "chemistry": 0.2,
+      "biology": 0.3,
+      "spanish": 0.8,
+      "history": 1.0,
+      "geography": 0.7,
+      "civics": 0.6
+    }
+  },
+  {
+    "code": "GEO_HUM001",
+    "name": "Geografía",
+    "faculty": "Ciencias Sociales",
+    "block": "E",
+    "referentialScore": 800,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.5,
+      "physics": 0.3,
+      "chemistry": 0.3,
+      "biology": 0.4,
+      "spanish": 0.7,
+      "history": 0.7,
+      "geography": 1.0,
+      "civics": 0.5
+    }
+  },
+  {
+    "code": "EDU001",
+    "name": "Educación Inicial",
+    "faculty": "Educación",
+    "block": "E",
+    "referentialScore": 750,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.5,
+      "physics": 0.2,
+      "chemistry": 0.2,
+      "biology": 0.4,
+      "spanish": 0.8,
+      "history": 0.5,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "EDU_PRI001",
+    "name": "Educación Primaria",
+    "faculty": "Educación",
+    "block": "E",
+    "referentialScore": 750,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.6,
+      "physics": 0.3,
+      "chemistry": 0.3,
+      "biology": 0.4,
+      "spanish": 0.8,
+      "history": 0.5,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "EDU_SEC_MAT001",
+    "name": "Educación Secundaria - Matemática",
+    "faculty": "Educación",
+    "block": "E",
+    "referentialScore": 800,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 1.0,
+      "physics": 0.5,
+      "chemistry": 0.4,
+      "biology": 0.3,
+      "spanish": 0.7,
+      "history": 0.4,
+      "geography": 0.4,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "EDU_SEC_FIS001",
+    "name": "Educación Secundaria - Física",
+    "faculty": "Educación",
+    "block": "E",
+    "referentialScore": 800,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.9,
+      "physics": 1.0,
+      "chemistry": 0.5,
+      "biology": 0.3,
+      "spanish": 0.7,
+      "history": 0.4,
+      "geography": 0.4,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "EDU_SEC_QUI001",
+    "name": "Educación Secundaria - Química",
+    "faculty": "Educación",
+    "block": "E",
+    "referentialScore": 800,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.8,
+      "physics": 0.6,
+      "chemistry": 1.0,
+      "biology": 0.5,
+      "spanish": 0.7,
+      "history": 0.4,
+      "geography": 0.4,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "EDU_SEC_BIO001",
+    "name": "Educación Secundaria - Biología",
+    "faculty": "Educación",
+    "block": "E",
+    "referentialScore": 800,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.7,
+      "physics": 0.5,
+      "chemistry": 0.6,
+      "biology": 1.0,
+      "spanish": 0.7,
+      "history": 0.4,
+      "geography": 0.5,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "EDU_SEC_HIS001",
+    "name": "Educación Secundaria - Historia",
+    "faculty": "Educación",
+    "block": "E",
+    "referentialScore": 750,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.5,
+      "physics": 0.3,
+      "chemistry": 0.3,
+      "biology": 0.4,
+      "spanish": 0.8,
+      "history": 1.0,
+      "geography": 0.6,
+      "civics": 0.5
+    }
+  },
+  {
+    "code": "EDU_SEC_LIT001",
+    "name": "Educación Secundaria - Literatura",
+    "faculty": "Educación",
+    "block": "E",
+    "referentialScore": 750,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.4,
+      "physics": 0.2,
+      "chemistry": 0.2,
+      "biology": 0.3,
+      "spanish": 1.0,
+      "history": 0.7,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "EDU_SEC_IDI001",
+    "name": "Educación Secundaria - Idiomas",
+    "faculty": "Educación",
+    "block": "E",
+    "referentialScore": 850,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.5,
+      "physics": 0.2,
+      "chemistry": 0.2,
+      "biology": 0.3,
+      "spanish": 1.0,
+      "history": 0.6,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "TRA001",
+    "name": "Traducción e Interpretación",
+    "faculty": "Letras y Ciencias Humanas",
+    "block": "E",
+    "referentialScore": 950,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.4,
+      "physics": 0.2,
+      "chemistry": 0.2,
+      "biology": 0.3,
+      "spanish": 1.0,
+      "history": 0.6,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "LIN001",
+    "name": "Lingüística",
+    "faculty": "Letras y Ciencias Humanas",
+    "block": "E",
+    "referentialScore": 900,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.4,
+      "physics": 0.2,
+      "chemistry": 0.2,
+      "biology": 0.3,
+      "spanish": 1.0,
+      "history": 0.6,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "ART001",
+    "name": "Arte",
+    "faculty": "Arte",
+    "block": "E",
+    "referentialScore": 800,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.3,
+      "physics": 0.2,
+      "chemistry": 0.2,
+      "biology": 0.3,
+      "spanish": 0.8,
+      "history": 0.7,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "MUS001",
+    "name": "Música",
+    "faculty": "Arte",
+    "block": "E",
+    "referentialScore": 750,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.3,
+      "physics": 0.3,
+      "chemistry": 0.2,
+      "biology": 0.3,
+      "spanish": 0.7,
+      "history": 0.6,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "BIB001",
+    "name": "Bibliotecología y Ciencia de la Información",
+    "faculty": "Letras y Ciencias Humanas",
+    "block": "E",
+    "referentialScore": 700,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.4,
+      "physics": 0.2,
+      "chemistry": 0.2,
+      "biology": 0.3,
+      "spanish": 0.8,
+      "history": 0.6,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "COM001",
+    "name": "Ciencias de la Comunicación",
+    "faculty": "Ciencias de la Comunicación",
+    "block": "E",
+    "referentialScore": 1100,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.5,
+      "physics": 0.2,
+      "chemistry": 0.2,
+      "biology": 0.3,
+      "spanish": 1.0,
+      "history": 0.6,
+      "geography": 0.5,
+      "civics": 0.5
+    }
+  },
+  {
+    "code": "SOC001",
+    "name": "Sociología",
+    "faculty": "Ciencias Sociales",
+    "block": "E",
+    "referentialScore": 950,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.5,
+      "physics": 0.2,
+      "chemistry": 0.2,
+      "biology": 0.3,
+      "spanish": 0.8,
+      "history": 0.8,
+      "geography": 0.6,
+      "civics": 0.6
+    }
+  },
+  {
+    "code": "ANT001",
+    "name": "Antropología",
+    "faculty": "Ciencias Sociales",
+    "block": "E",
+    "referentialScore": 900,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.4,
+      "physics": 0.2,
+      "chemistry": 0.2,
+      "biology": 0.4,
+      "spanish": 0.8,
+      "history": 0.8,
+      "geography": 0.6,
+      "civics": 0.5
+    }
+  },
+  {
+    "code": "ARQ001",
+    "name": "Arquitectura",
+    "faculty": "Arquitectura y Urbanismo",
+    "block": "B",
+    "referentialScore": 1250,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.9,
+      "physics": 0.7,
+      "chemistry": 0.4,
+      "biology": 0.3,
+      "spanish": 0.6,
+      "history": 0.6,
+      "geography": 0.5,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "URB001",
+    "name": "Urbanismo",
+    "faculty": "Arquitectura y Urbanismo",
+    "block": "B",
+    "referentialScore": 1100,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.8,
+      "physics": 0.6,
+      "chemistry": 0.4,
+      "biology": 0.3,
+      "spanish": 0.6,
+      "history": 0.6,
+      "geography": 0.7,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "ING_IND_ALI001",
+    "name": "Ingeniería Industrial de Alimentos",
+    "faculty": "Ingeniería Agroindustrial y Alimentos",
+    "block": "B",
+    "referentialScore": 1100,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.8,
+      "physics": 0.6,
+      "chemistry": 0.8,
+      "biology": 0.7,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.4,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "ZOO001",
+    "name": "Zootecnia",
+    "faculty": "Medicina Veterinaria",
+    "block": "A",
+    "referentialScore": 1000,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.7,
+      "physics": 0.5,
+      "chemistry": 0.7,
+      "biology": 0.9,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.4,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "VET001",
+    "name": "Medicina Veterinaria",
+    "faculty": "Medicina Veterinaria",
+    "block": "A",
+    "referentialScore": 1150,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.7,
+      "physics": 0.5,
+      "chemistry": 0.7,
+      "biology": 1.0,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.4,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "ING_AMB001",
+    "name": "Ingeniería Ambiental",
+    "faculty": "Ingeniería Sanitaria y Ambiental",
+    "block": "B",
+    "referentialScore": 1150,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.9,
+      "physics": 0.7,
+      "chemistry": 0.8,
+      "biology": 0.8,
+      "spanish": 0.5,
+      "history": 0.4,
+      "geography": 0.6,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "ING_SAN001",
+    "name": "Ingeniería Sanitaria",
+    "faculty": "Ingeniería Sanitaria y Ambiental",
+    "block": "B",
+    "referentialScore": 1100,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.9,
+      "physics": 0.7,
+      "chemistry": 0.8,
+      "biology": 0.7,
+      "spanish": 0.5,
+      "history": 0.4,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "ING_GES001",
+    "name": "Ingeniería de Gestión Empresarial",
+    "faculty": "Ingeniería Industrial",
+    "block": "B",
+    "referentialScore": 1200,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.9,
+      "physics": 0.6,
+      "chemistry": 0.5,
+      "biology": 0.3,
+      "spanish": 0.6,
+      "history": 0.4,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "ING_ELE_COM001",
+    "name": "Ingeniería Eléctrica",
+    "faculty": "Ingeniería Electrónica y Eléctrica",
+    "block": "B",
+    "referentialScore": 1300,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 1.0,
+      "physics": 1.0,
+      "chemistry": 0.6,
+      "biology": 0.3,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.4,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "ING_TEL001",
+    "name": "Ingeniería de Telecomunicaciones",
+    "faculty": "Ingeniería Electrónica y Eléctrica",
+    "block": "B",
+    "referentialScore": 1250,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 1.0,
+      "physics": 0.9,
+      "chemistry": 0.5,
+      "biology": 0.3,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.4,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "ING_INF001",
+    "name": "Ingeniería Informática",
+    "faculty": "Ingeniería de Sistemas e Informática",
+    "block": "B",
+    "referentialScore": 1350,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 1.0,
+      "physics": 0.7,
+      "chemistry": 0.5,
+      "biology": 0.3,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.4,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "ING_EST001",
+    "name": "Ingeniería Estadística",
+    "faculty": "Ciencias Matemáticas",
+    "block": "C",
+    "referentialScore": 900,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 1.0,
+      "physics": 0.5,
+      "chemistry": 0.4,
+      "biology": 0.3,
+      "spanish": 0.6,
+      "history": 0.3,
+      "geography": 0.3,
+      "civics": 0.2
+    }
+  },
+  {
+    "code": "ING_COM001",
+    "name": "Ingeniería Comercial",
+    "faculty": "Ciencias Administrativas",
+    "block": "D",
+    "referentialScore": 1150,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.8,
+      "physics": 0.3,
+      "chemistry": 0.3,
+      "biology": 0.3,
+      "spanish": 0.7,
+      "history": 0.5,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "ING_FIN001",
+    "name": "Ingeniería Financiera",
+    "faculty": "Ciencias Económicas",
+    "block": "D",
+    "referentialScore": 1200,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.9,
+      "physics": 0.3,
+      "chemistry": 0.3,
+      "biology": 0.3,
+      "spanish": 0.7,
+      "history": 0.5,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "ING_NEG001",
+    "name": "Ingeniería de Negocios",
+    "faculty": "Ciencias Administrativas",
+    "block": "D",
+    "referentialScore": 1150,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.8,
+      "physics": 0.3,
+      "chemistry": 0.3,
+      "biology": 0.3,
+      "spanish": 0.7,
+      "history": 0.5,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "REL_INT001",
+    "name": "Relaciones Internacionales",
+    "faculty": "Ciencias Políticas y Relaciones Internacionales",
+    "block": "E",
+    "referentialScore": 1050,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.5,
+      "physics": 0.2,
+      "chemistry": 0.2,
+      "biology": 0.3,
+      "spanish": 0.8,
+      "history": 0.8,
+      "geography": 0.7,
+      "civics": 0.7
+    }
+  },
+  {
+    "code": "CIE_POL001",
+    "name": "Ciencia Política",
+    "faculty": "Ciencias Políticas y Relaciones Internacionales",
+    "block": "E",
+    "referentialScore": 1000,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.5,
+      "physics": 0.2,
+      "chemistry": 0.2,
+      "biology": 0.3,
+      "spanish": 0.8,
+      "history": 0.8,
+      "geography": 0.6,
+      "civics": 0.8
+    }
+  },
+  {
+    "code": "PSI_ORG001",
+    "name": "Psicología Organizacional",
+    "faculty": "Psicología",
+    "block": "E",
+    "referentialScore": 1300,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.6,
+      "physics": 0.3,
+      "chemistry": 0.4,
+      "biology": 0.6,
+      "spanish": 0.8,
+      "history": 0.5,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "PSI_CLI001",
+    "name": "Psicología Clínica",
+    "faculty": "Psicología",
+    "block": "E",
+    "referentialScore": 1350,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.6,
+      "physics": 0.3,
+      "chemistry": 0.4,
+      "biology": 0.7,
+      "spanish": 0.8,
+      "history": 0.5,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "PSI_EDU001",
+    "name": "Psicología Educacional",
+    "faculty": "Psicología",
+    "block": "E",
+    "referentialScore": 1250,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.6,
+      "physics": 0.3,
+      "chemistry": 0.4,
+      "biology": 0.6,
+      "spanish": 0.8,
+      "history": 0.5,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "ING_QUIM001",
+    "name": "Ingeniería Química",
+    "faculty": "Química e Ingeniería Química",
+    "block": "B",
+    "referentialScore": 1200,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.9,
+      "physics": 0.7,
+      "chemistry": 1.0,
+      "biology": 0.5,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.4,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "ING_BIO001",
+    "name": "Ingeniería Biológica",
+    "faculty": "Ciencias Biológicas",
+    "block": "B",
+    "referentialScore": 1100,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.8,
+      "physics": 0.6,
+      "chemistry": 0.7,
+      "biology": 1.0,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.4,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "BIO_MAR001",
+    "name": "Biología Marina",
+    "faculty": "Ciencias Biológicas",
+    "block": "C",
+    "referentialScore": 950,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.7,
+      "physics": 0.6,
+      "chemistry": 0.6,
+      "biology": 1.0,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.5,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "MICRO001",
+    "name": "Microbiología y Parasitología",
+    "faculty": "Ciencias Biológicas",
+    "block": "C",
+    "referentialScore": 900,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.6,
+      "physics": 0.5,
+      "chemistry": 0.7,
+      "biology": 1.0,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.4,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "GEN_BIO001",
+    "name": "Genética y Biotecnología",
+    "faculty": "Ciencias Biológicas",
+    "block": "C",
+    "referentialScore": 1000,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.7,
+      "physics": 0.5,
+      "chemistry": 0.7,
+      "biology": 1.0,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.4,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "FIS_MED001",
+    "name": "Física Médica",
+    "faculty": "Ciencias Físicas",
+    "block": "C",
+    "referentialScore": 1050,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 1.0,
+      "physics": 1.0,
+      "chemistry": 0.6,
+      "biology": 0.6,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.3,
+      "civics": 0.2
+    }
+  },
+  {
+    "code": "GEO_FIS001",
+    "name": "Geofísica",
+    "faculty": "Ciencias Físicas",
+    "block": "C",
+    "referentialScore": 950,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 1.0,
+      "physics": 0.9,
+      "chemistry": 0.5,
+      "biology": 0.4,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.6,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "METEORO001",
+    "name": "Meteorología",
+    "faculty": "Ciencias Físicas",
+    "block": "C",
+    "referentialScore": 900,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.9,
+      "physics": 0.9,
+      "chemistry": 0.5,
+      "biology": 0.4,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.7,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "OCEANO001",
+    "name": "Oceanografía",
+    "faculty": "Ciencias Biológicas",
+    "block": "C",
+    "referentialScore": 950,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.7,
+      "physics": 0.7,
+      "chemistry": 0.6,
+      "biology": 0.9,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.6,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "QUI_FARM001",
+    "name": "Química Farmacéutica",
+    "faculty": "Farmacia y Bioquímica",
+    "block": "A",
+    "referentialScore": 1250,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.8,
+      "physics": 0.5,
+      "chemistry": 1.0,
+      "biology": 0.8,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.3,
+      "civics": 0.2
+    }
+  },
+  {
+    "code": "BIO_QUIM001",
+    "name": "Bioquímica",
+    "faculty": "Farmacia y Bioquímica",
+    "block": "A",
+    "referentialScore": 1200,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.7,
+      "physics": 0.5,
+      "chemistry": 0.9,
+      "biology": 0.9,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.3,
+      "civics": 0.2
+    }
+  },
+  {
+    "code": "TOXICO001",
+    "name": "Toxicología",
+    "faculty": "Farmacia y Bioquímica",
+    "block": "A",
+    "referentialScore": 1150,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.7,
+      "physics": 0.5,
+      "chemistry": 0.9,
+      "biology": 0.8,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.3,
+      "civics": 0.2
+    }
+  },
+  {
+    "code": "NUTRIC001",
+    "name": "Nutrición",
+    "faculty": "Ciencias de la Salud",
+    "block": "A",
+    "referentialScore": 1100,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.6,
+      "physics": 0.4,
+      "chemistry": 0.7,
+      "biology": 0.9,
+      "spanish": 0.6,
+      "history": 0.3,
+      "geography": 0.4,
+      "civics": 0.3
+    }
+  },
+  {
+    "code": "SALUD_PUB001",
+    "name": "Salud Pública",
+    "faculty": "Ciencias de la Salud",
+    "block": "A",
+    "referentialScore": 1050,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.6,
+      "physics": 0.4,
+      "chemistry": 0.6,
+      "biology": 0.8,
+      "spanish": 0.7,
+      "history": 0.4,
+      "geography": 0.5,
+      "civics": 0.4
+    }
+  },
+  {
+    "code": "TEC_MED001",
+    "name": "Tecnología Médica",
+    "faculty": "Medicina",
+    "block": "A",
+    "referentialScore": 1300,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.7,
+      "physics": 0.6,
+      "chemistry": 0.7,
+      "biology": 0.9,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.3,
+      "civics": 0.2
+    }
+  },
+  {
+    "code": "TERAPIA001",
+    "name": "Terapia Física",
+    "faculty": "Medicina",
+    "block": "A",
+    "referentialScore": 1250,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.6,
+      "physics": 0.7,
+      "chemistry": 0.6,
+      "biology": 0.9,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.3,
+      "civics": 0.2
+    }
+  },
+  {
+    "code": "TERAPIA_OCC001",
+    "name": "Terapia Ocupacional",
+    "faculty": "Medicina",
+    "block": "A",
+    "referentialScore": 1200,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.6,
+      "physics": 0.6,
+      "chemistry": 0.6,
+      "biology": 0.9,
+      "spanish": 0.5,
+      "history": 0.3,
+      "geography": 0.3,
+      "civics": 0.2
+    }
+  },
+  {
+    "code": "FONO001",
+    "name": "Fonoaudiología",
+    "faculty": "Medicina",
+    "block": "A",
+    "referentialScore": 1250,
+    "estimatedDuration": 180,
+    "weights": {
+      "mathematics": 0.6,
+      "physics": 0.5,
+      "chemistry": 0.6,
+      "biology": 0.9,
+      "spanish": 0.7,
+      "history": 0.3,
+      "geography": 0.3,
+      "civics": 0.2
+    }
+  }
+]

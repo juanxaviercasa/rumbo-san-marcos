@@ -1,0 +1,467 @@
+[
+  {
+    "topic": "Derivadas",
+    "course": "Matemática",
+    "area": "A",
+    "difficulty": "intermediate",
+    "content": "Calcular la derivada de f(x) = x² + 3x",
+    "options": [
+      {"id": "opt-1", "text": "2x + 3"},
+      {"id": "opt-2", "text": "x + 3"},
+      {"id": "opt-3", "text": "2x"},
+      {"id": "opt-4", "text": "x"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "Aplicando la regla de la potencia: d/dx(x²) = 2x y d/dx(3x) = 3, por lo tanto f'(x) = 2x + 3."
+  },
+  {
+    "topic": "Ecuaciones cuadráticas",
+    "course": "Matemática",
+    "area": "B",
+    "difficulty": "basic",
+    "content": "Resolver la ecuación: x² - 5x + 6 = 0",
+    "options": [
+      {"id": "opt-1", "text": "x = 2, x = 3"},
+      {"id": "opt-2", "text": "x = -2, x = -3"},
+      {"id": "opt-3", "text": "x = 1, x = 6"},
+      {"id": "opt-4", "text": "x = -1, x = -6"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "Factorizando: (x - 2)(x - 3) = 0, por lo tanto x = 2 o x = 3."
+  },
+  {
+    "topic": "Vectores",
+    "course": "Física",
+    "area": "B",
+    "difficulty": "intermediate",
+    "content": "Si A = (3, 4) y B = (1, 2), calcular A + B",
+    "options": [
+      {"id": "opt-1", "text": "(4, 6)"},
+      {"id": "opt-2", "text": "(2, 2)"},
+      {"id": "opt-3", "text": "(3, 8)"},
+      {"id": "opt-4", "text": "(4, 8)"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "Suma de vectores componente a componente: (3+1, 4+2) = (4, 6)."
+  },
+  {
+    "topic": "Leyes de Newton",
+    "course": "Física",
+    "area": "A",
+    "difficulty": "basic",
+    "content": "Un cuerpo de 10 kg es acelerado a 2 m/s². ¿Qué fuerza se aplica?",
+    "options": [
+      {"id": "opt-1", "text": "20 N"},
+      {"id": "opt-2", "text": "5 N"},
+      {"id": "opt-3", "text": "12 N"},
+      {"id": "opt-4", "text": "100 N"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "Segunda ley de Newton: F = m × a = 10 kg × 2 m/s² = 20 N."
+  },
+  {
+    "topic": "Estequiometría",
+    "course": "Química",
+    "area": "A",
+    "difficulty": "intermediate",
+    "content": "¿Cuántos moles de H₂O se producen al quemar 2 moles de H₂? (2H₂ + O₂ → 2H₂O)",
+    "options": [
+      {"id": "opt-1", "text": "2 moles"},
+      {"id": "opt-2", "text": "1 mol"},
+      {"id": "opt-3", "text": "4 moles"},
+      {"id": "opt-4", "text": "0.5 moles"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "La relación estequiométrica es 2:2, por lo tanto 2 moles de H₂ producen 2 moles de H₂O."
+  },
+  {
+    "topic": "Enlace químico",
+    "course": "Química",
+    "area": "B",
+    "difficulty": "basic",
+    "content": "¿Qué tipo de enlace se forma entre un metal y un no metal?",
+    "options": [
+      {"id": "opt-1", "text": "Iónico"},
+      {"id": "opt-2", "text": "Covalente"},
+      {"id": "opt-3", "text": "Metálico"},
+      {"id": "opt-4", "text": "Puente de hidrógeno"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "Los metales ceden electrones y los no metales los aceptan, formando un enlace iónico."
+  },
+  {
+    "topic": "Célula",
+    "course": "Biología",
+    "area": "A",
+    "difficulty": "basic",
+    "content": "¿Cuál es el organelo responsable de la producción de energía en la célula?",
+    "options": [
+      {"id": "opt-1", "text": "Mitocondria"},
+      {"id": "opt-2", "text": "Ribosoma"},
+      {"id": "opt-3", "text": "Aparato de Golgi"},
+      {"id": "opt-4", "text": "Lisosoma"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "La mitocondria es el organelo donde ocurre la respiración celular y se produce ATP."
+  },
+  {
+    "topic": "Genética",
+    "course": "Biología",
+    "area": "C",
+    "difficulty": "intermediate",
+    "content": "Si un padre es AA y la madre es aa, ¿cuál es la probabilidad de que el hijo sea heterocigoto?",
+    "options": [
+      {"id": "opt-1", "text": "100%"},
+      {"id": "opt-2", "text": "50%"},
+      {"id": "opt-3", "text": "25%"},
+      {"id": "opt-4", "text": "0%"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "Todos los hijos recibirán un alelo A del padre y un alelo a de la madre, resultando en Aa (100% heterocigotos)."
+  },
+  {
+    "topic": "Comprensión de lectura",
+    "course": "Habilidad Verbal",
+    "area": "E",
+    "difficulty": "intermediate",
+    "content": "Según el texto, ¿cuál es la idea principal? (Texto: 'La educación es fundamental para el desarrollo de un país. Permite a las personas adquirir habilidades y conocimientos que mejoran su calidad de vida y contribuyen al progreso social.')",
+    "options": [
+      {"id": "opt-1", "text": "La educación es clave para el desarrollo personal y social"},
+      {"id": "opt-2", "text": "La educación solo beneficia a las personas"},
+      {"id": "opt-3", "text": "El desarrollo de un país depende únicamente de la economía"},
+      {"id": "opt-4", "text": "La calidad de vida no está relacionada con la educación"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "El texto enfatiza que la educación beneficia tanto a nivel individual como social, siendo fundamental para el desarrollo."
+  },
+  {
+    "topic": "Series numéricas",
+    "course": "Habilidad Lógico-Matemática",
+    "area": "D",
+    "difficulty": "basic",
+    "content": "Completar la serie: 2, 4, 8, 16, ...",
+    "options": [
+      {"id": "opt-1", "text": "32"},
+      {"id": "opt-2", "text": "24"},
+      {"id": "opt-3", "text": "20"},
+      {"id": "opt-4", "text": "18"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "Cada número se multiplica por 2: 2×2=4, 4×2=8, 8×2=16, 16×2=32."
+  },
+  {
+    "topic": "Literatura peruana",
+    "course": "Literatura",
+    "area": "E",
+    "difficulty": "intermediate",
+    "content": "¿Quién escribió 'Los ríos profundos'?",
+    "options": [
+      {"id": "opt-1", "text": "José María Arguedas"},
+      {"id": "opt-2", "text": "Mario Vargas Llosa"},
+      {"id": "opt-3", "text": "César Vallejo"},
+      {"id": "opt-4", "text": "Inca Garcilaso de la Vega"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "'Los ríos profundos' es una novela de José María Arguedas, publicada en 1958."
+  },
+  {
+    "topic": "Historia del Perú",
+    "course": "Historia",
+    "area": "E",
+    "difficulty": "basic",
+    "content": "¿En qué año se proclamó la Independencia del Perú?",
+    "options": [
+      {"id": "opt-1", "text": "1821"},
+      {"id": "opt-2", "text": "1824"},
+      {"id": "opt-3", "text": "1810"},
+      {"id": "opt-4", "text": "1836"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "La Independencia del Perú fue proclamada por Don José de San Martín el 28 de julio de 1821."
+  },
+  {
+    "topic": "Geografía del Perú",
+    "course": "Geografía",
+    "area": "D",
+    "difficulty": "basic",
+    "content": "¿Cuál es el río más largo del Perú?",
+    "options": [
+      {"id": "opt-1", "text": "Río Amazonas"},
+      {"id": "opt-2", "text": "Río Rímac"},
+      {"id": "opt-3", "text": "Río Urubamba"},
+      {"id": "opt-4", "text": "Río Mantaro"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "El río Amazonas es el más largo del Perú y del mundo, con aproximadamente 6,992 km."
+  },
+  {
+    "topic": "Economía",
+    "course": "Economía",
+    "area": "D",
+    "difficulty": "intermediate",
+    "content": "¿Qué es la inflación?",
+    "options": [
+      {"id": "opt-1", "text": "Aumento generalizado y sostenido de los precios"},
+      {"id": "opt-2", "text": "Disminución de los precios"},
+      {"id": "opt-3", "text": "Aumento del empleo"},
+      {"id": "opt-4", "text": "Disminución de la producción"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "La inflación es el aumento generalizado y sostenido de los precios de bienes y servicios en una economía."
+  },
+  {
+    "topic": "Educación Cívica",
+    "course": "Educación Cívica",
+    "area": "E",
+    "difficulty": "basic",
+    "content": "¿Cuántos poderes tiene el Estado Peruano?",
+    "options": [
+      {"id": "opt-1", "text": "3"},
+      {"id": "opt-2", "text": "2"},
+      {"id": "opt-3", "text": "4"},
+      {"id": "opt-4", "text": "5"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "El Estado Peruano tiene 3 poderes: Ejecutivo, Legislativo y Judicial."
+  },
+  {
+    "topic": "Trigonometría",
+    "course": "Matemática",
+    "area": "B",
+    "difficulty": "advanced",
+    "content": "Si sen(θ) = 3/5 y θ está en el primer cuadrante, calcular cos(θ)",
+    "options": [
+      {"id": "opt-1", "text": "4/5"},
+      {"id": "opt-2", "text": "3/4"},
+      {"id": "opt-3", "text": "5/4"},
+      {"id": "opt-4", "text": "5/3"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "Usando la identidad sen²(θ) + cos²(θ) = 1: cos(θ) = √(1 - 9/25) = √(16/25) = 4/5."
+  },
+  {
+    "topic": "MRU",
+    "course": "Física",
+    "area": "A",
+    "difficulty": "basic",
+    "content": "Un auto viaja a 60 km/h durante 2 horas. ¿Qué distancia recorre?",
+    "options": [
+      {"id": "opt-1", "text": "120 km"},
+      {"id": "opt-2", "text": "30 km"},
+      {"id": "opt-3", "text": "60 km"},
+      {"id": "opt-4", "text": "180 km"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "En MRU: d = v × t = 60 km/h × 2 h = 120 km."
+  },
+  {
+    "topic": "Nomenclatura inorgánica",
+    "course": "Química",
+    "area": "C",
+    "difficulty": "intermediate",
+    "content": "¿Cuál es la fórmula del ácido sulfúrico?",
+    "options": [
+      {"id": "opt-1", "text": "H₂SO₄"},
+      {"id": "opt-2", "text": "H₂SO₃"},
+      {"id": "opt-3", "text": "H₂S"},
+      {"id": "opt-4", "text": "SO₄"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "El ácido sulfúrico tiene fórmula H₂SO₄, derivado del ion sulfato SO₄²⁻."
+  },
+  {
+    "topic": "Ecología",
+    "course": "Biología",
+    "area": "E",
+    "difficulty": "basic",
+    "content": "¿Qué es un ecosistema?",
+    "options": [
+      {"id": "opt-1", "text": "Conjunto de seres vivos y su medio físico"},
+      {"id": "opt-2", "text": "Solo los seres vivos de una región"},
+      {"id": "opt-3", "text": "Solo el medio físico"},
+      {"id": "opt-4", "text": "Una cadena alimentaria"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "Un ecosistema incluye tanto los componentes bióticos (seres vivos) como abióticos (medio físico)."
+  },
+  {
+    "topic": "Analogías verbales",
+    "course": "Habilidad Verbal",
+    "area": "A",
+    "difficulty": "intermediate",
+    "content": "MÉDICO es a HOSPITAL como PROFESOR es a:",
+    "options": [
+      {"id": "opt-1", "text": "ESCUELA"},
+      {"id": "opt-2", "text": "LIBRO"},
+      {"id": "opt-3", "text": "ALUMNO"},
+      {"id": "opt-4", "text": "CLASE"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "Relación de lugar de trabajo: el médico trabaja en el hospital, el profesor en la escuela."
+  },
+  {
+    "topic": "Porcentajes",
+    "course": "Matemática",
+    "area": "D",
+    "difficulty": "basic",
+    "content": "¿Cuánto es el 25% de 200?",
+    "options": [
+      {"id": "opt-1", "text": "50"},
+      {"id": "opt-2", "text": "25"},
+      {"id": "opt-3", "text": "75"},
+      {"id": "opt-4", "text": "100"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "25% de 200 = 0.25 × 200 = 50."
+  },
+  {
+    "topic": "Calor y temperatura",
+    "course": "Física",
+    "area": "C",
+    "difficulty": "intermediate",
+    "content": "¿Cuánto calor se necesita para elevar 100g de agua de 20°C a 30°C? (Ce agua = 1 cal/g°C)",
+    "options": [
+      {"id": "opt-1", "text": "1000 cal"},
+      {"id": "opt-2", "text": "100 cal"},
+      {"id": "opt-3", "text": "500 cal"},
+      {"id": "opt-4", "text": "2000 cal"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "Q = m × Ce × ΔT = 100g × 1 cal/g°C × 10°C = 1000 cal."
+  },
+  {
+    "topic": "Soluciones",
+    "course": "Química",
+    "area": "A",
+    "difficulty": "advanced",
+    "content": "¿Cuál es la molaridad de una solución con 2 moles de soluto en 500 mL?",
+    "options": [
+      {"id": "opt-1", "text": "4 M"},
+      {"id": "opt-2", "text": "2 M"},
+      {"id": "opt-3", "text": "1 M"},
+      {"id": "opt-4", "text": "0.5 M"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "M = moles/L = 2 mol / 0.5 L = 4 M."
+  },
+  {
+    "topic": "Fotosíntesis",
+    "course": "Biología",
+    "area": "B",
+    "difficulty": "intermediate",
+    "content": "¿Qué gas liberan las plantas durante la fotosíntesis?",
+    "options": [
+      {"id": "opt-1", "text": "Oxígeno"},
+      {"id": "opt-2", "text": "Dióxido de carbono"},
+      {"id": "opt-3", "text": "Nitrógeno"},
+      {"id": "opt-4", "text": "Hidrógeno"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "Durante la fotosíntesis, las plantas absorben CO₂ y liberan O₂ como producto secundario."
+  },
+  {
+    "topic": "Sinónimos",
+    "course": "Habilidad Verbal",
+    "area": "B",
+    "difficulty": "basic",
+    "content": "Sinónimo de 'EFÍMERO':",
+    "options": [
+      {"id": "opt-1", "text": "Pasajero"},
+      {"id": "opt-2", "text": "Eterno"},
+      {"id": "opt-3", "text": "Duradero"},
+      {"id": "opt-4", "text": "Permanente"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "Efímero significa que dura poco tiempo, pasajero o momentáneo."
+  },
+  {
+    "topic": "Sucesiones literales",
+    "course": "Habilidad Lógico-Matemática",
+    "area": "C",
+    "difficulty": "intermediate",
+    "content": "Completar: A, C, E, G, ...",
+    "options": [
+      {"id": "opt-1", "text": "I"},
+      {"id": "opt-2", "text": "H"},
+      {"id": "opt-3", "text": "F"},
+      {"id": "opt-4", "text": "J"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "Salta una letra: A(1), C(3), E(5), G(7), I(9)."
+  },
+  {
+    "topic": "Literatura universal",
+    "course": "Literatura",
+    "area": "D",
+    "difficulty": "basic",
+    "content": "¿Quién escribió 'Don Quijote de la Mancha'?",
+    "options": [
+      {"id": "opt-1", "text": "Miguel de Cervantes"},
+      {"id": "opt-2", "text": "William Shakespeare"},
+      {"id": "opt-3", "text": "Gabriel García Márquez"},
+      {"id": "opt-4", "text": "Jorge Luis Borges"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "'Don Quijote de la Mancha' fue escrito por Miguel de Cervantes Saavedra en 1605."
+  },
+  {
+    "topic": "Virreinato",
+    "course": "Historia",
+    "area": "A",
+    "difficulty": "intermediate",
+    "content": "¿Quién fue el primer virrey del Perú?",
+    "options": [
+      {"id": "opt-1", "text": "Blasco Núñez de Vela"},
+      {"id": "opt-2", "text": "Francisco de Toledo"},
+      {"id": "opt-3", "text": "José de San Martín"},
+      {"id": "opt-4", "text": "Simón Bolívar"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "Blasco Núñez de Vela fue el primer virrey del Perú, nombrado en 1544."
+  },
+  {
+    "topic": "Regiones del Perú",
+    "course": "Geografía",
+    "area": "E",
+    "difficulty": "basic",
+    "content": "¿Cuántas regiones naturales tiene el Perú según Javier Pulgar Vidal?",
+    "options": [
+      {"id": "opt-1", "text": "8"},
+      {"id": "opt-2", "text": "3"},
+      {"id": "opt-3", "text": "5"},
+      {"id": "opt-4", "text": "10"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "Javier Pulgar Vidal identificó 8 regiones naturales: Chala, Yunga, Quechua, Suni, Puna, Janca, Rupa Rupa y Omagua."
+  },
+  {
+    "topic": "Oferta y demanda",
+    "course": "Economía",
+    "area": "B",
+    "difficulty": "basic",
+    "content": "Si la demanda aumenta y la oferta se mantiene constante, el precio:",
+    "options": [
+      {"id": "opt-1", "text": "Aumenta"},
+      {"id": "opt-2", "text": "Disminuye"},
+      {"id": "opt-3", "text": "Se mantiene"},
+      {"id": "opt-4", "text": "No se puede determinar"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "Cuando la demanda aumenta con oferta constante, hay escasez relativa y el precio tiende a subir."
+  },
+  {
+    "topic": "Derechos humanos",
+    "course": "Educación Cívica",
+    "area": "D",
+    "difficulty": "basic",
+    "content": "¿En qué año se aprobó la Declaración Universal de Derechos Humanos?",
+    "options": [
+      {"id": "opt-1", "text": "1948"},
+      {"id": "opt-2", "text": "1945"},
+      {"id": "opt-3", "text": "1950"},
+      {"id": "opt-4", "text": "1939"}
+    ],
+    "correctOptionId": "opt-1",
+    "explanation": "La Declaración Universal de Derechos Humanos fue aprobada por la ONU el 10 de diciembre de 1948."
+  }
+]

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-rumbo-burgundy: #8B1538;
+  --color-rumbo-dark: #5A0E2C;
+  --color-rumbo-light: #C41E4D;
+  --color-rumbo-gold: #D4AF37;
+  --color-rumbo-gray: #F5F5F5;
+  --font-fraunces: "Fraunces", serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+/* Variables de color custom */
+:root {
+  --rumbo-burgundy: #8B1538;
+  --rumbo-dark: #5A0E2C;
+  --rumbo-light: #C41E4D;
+  --rumbo-gold: #D4AF37;
+  --rumbo-gray: #F5F5F5;
+}
+
+/* Base Styles */
+* {
+  @apply box-border;
+}
+
+html, body {
+  @apply h-full m-0 p-0 bg-white text-gray-900;
+  font-family: 'Inter', sans-serif;
+}
+
+#root {
+  @apply h-full;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-fraunces font-bold;
+}
+
+h1 {
+  @apply text-4xl md:text-5xl;
+}
+
+h2 {
+  @apply text-3xl md:text-4xl;
+}
+
+h3 {
+  @apply text-2xl md:text-3xl;
+}
+
+/* Links */
+a {
+  @apply text-rumbo-burgundy hover:text-rumbo-dark transition-colors;
+}
+
+/* Buttons */
+button {
+  @apply transition-all duration-200;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-rumbo-burgundy text-white rounded-lg hover:bg-rumbo-dark font-medium;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-gray-200 text-gray-900 rounded-lg hover:bg-gray-300 font-medium;
+}
+
+.btn-outline {
+  @apply px-6 py-3 border-2 border-rumbo-burgundy text-rumbo-burgundy rounded-lg hover:bg-rumbo-burgundy hover:text-white font-medium;
+}
+
+/* Cards */
+.card {
+  @apply bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow p-4;
+}
+
+/* Responsive Container */
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Utility: Font weights */
+.font-400 { font-weight: 400; }
+.font-500 { font-weight: 500; }
+.font-600 { font-weight: 600; }
+.font-700 { font-weight: 700; }
