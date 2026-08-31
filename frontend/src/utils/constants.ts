@@ -2,7 +2,14 @@
 // Nota: Esta es una estructura base. Los datos completos se cargarán de PocketBase en la fase final.
 
 export const BLOCKS = ['A', 'B', 'C', 'D', 'E'] as const
-export const FACULTIES = ['Ingeniería', 'Ciencias', 'Humanidades', 'Derecho', 'Medicina'] as const
+export const FACULTIES = [
+  'Ingeniería',
+  'Ciencias',
+  'Humanidades',
+  'Psicología',
+  'Derecho',
+  'Medicina',
+] as const
 
 export const BLOCK_DESCRIPTIONS: Record<string, string> = {
   A: 'Ingeniería y Tecnología',
@@ -13,7 +20,7 @@ export const BLOCK_DESCRIPTIONS: Record<string, string> = {
 }
 
 // Carreras de ejemplo por facultad (estructura simplificada)
-// En producción esto vendrá de PocketBase
+// En producción esto vendrá de Supabase
 export const CAREERS_BY_FACULTY: Record<string, any[]> = {
   'Ingeniería': [
     { id: 'ing-1', code: 'ING001', name: 'Ingeniería Civil', block: 'A', referentialScore: 1450 },
@@ -29,6 +36,11 @@ export const CAREERS_BY_FACULTY: Record<string, any[]> = {
     { id: 'hum-1', code: 'HUM001', name: 'Literatura', block: 'C', referentialScore: 1200 },
     { id: 'hum-2', code: 'HUM002', name: 'Historia', block: 'C', referentialScore: 1180 },
     { id: 'hum-3', code: 'HUM003', name: 'Filosofía', block: 'C', referentialScore: 1220 },
+  ],
+  'Psicología': [
+    { id: 'psi-1', code: 'PSI001', name: 'Psicología', block: 'C', referentialScore: 1340 },
+    { id: 'psi-2', code: 'PSI002', name: 'Trabajo Social', block: 'C', referentialScore: 1260 },
+    { id: 'psi-3', code: 'PSI003', name: 'Sociología', block: 'C', referentialScore: 1210 },
   ],
   'Derecho': [
     { id: 'law-1', code: 'LAW001', name: 'Derecho', block: 'D', referentialScore: 1380 },

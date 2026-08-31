@@ -61,6 +61,14 @@ alter table questions enable row level security;
 alter table exam_attempts enable row level security;
 alter table audit_logs enable row level security;
 
+drop policy if exists "careers_public_read" on careers;
+drop policy if exists "questions_public_read" on questions;
+drop policy if exists "exam_attempts_insert_public" on exam_attempts;
+drop policy if exists "exam_attempts_update_public" on exam_attempts;
+drop policy if exists "admin_only_manage" on careers;
+drop policy if exists "admin_only_questions" on questions;
+drop policy if exists "admin_only_audit" on audit_logs;
+
 create policy "careers_public_read"
 on careers for select
 using (true);
@@ -80,7 +88,7 @@ with check (true);
 
 create policy "admin_only_manage"
 on careers for all
-auth.role() = 'authenticated'
+using (auth.role() = 'authenticated')
 with check (auth.role() = 'authenticated');
 
 create policy "admin_only_questions"
@@ -92,6 +100,9 @@ create policy "admin_only_audit"
 on audit_logs for all
 using (auth.role() = 'authenticated')
 with check (auth.role() = 'authenticated');
+
+drop trigger if exists trg_grade_exam_attempt on exam_attempts;
+drop function if exists grade_exam_attempt();
 
 create or replace function grade_exam_attempt()
 returns trigger

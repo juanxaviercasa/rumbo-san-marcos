@@ -231,15 +231,15 @@ export async function getAdminStats(): Promise<AdminStats> {
     const normalizedCareers = careers.map(normalizeCareer)
     const normalizedQuestions = questions.map(normalizeQuestion)
     const totalAreas = new Set([
-      ...normalizedCareers.map((career) => career.block),
-      ...normalizedQuestions.map((question) => question.area),
+      ...normalizedCareers.map((career: Career) => career.block),
+      ...normalizedQuestions.map((question: Question) => question.area),
     ]).size
 
     return {
       totalCareers: normalizedCareers.length,
       totalQuestions: normalizedQuestions.length,
-      activeCareers: normalizedCareers.filter((career) => Boolean(career.id)).length,
-      activeQuestions: normalizedQuestions.filter((question) => Boolean(question.id)).length,
+      activeCareers: normalizedCareers.filter((career: Career) => Boolean(career.id)).length,
+      activeQuestions: normalizedQuestions.filter((question: Question) => Boolean(question.id)).length,
       totalAreas,
     }
   } catch {

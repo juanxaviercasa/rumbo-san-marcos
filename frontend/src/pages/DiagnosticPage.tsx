@@ -65,9 +65,12 @@ export default function DiagnosticPage() {
       navigate(`/examen/${examAttempt.id}`)
     } catch (error) {
       console.error('Error al crear el intento de examen:', error)
-      setSubmitError(
-        'Hubo un error al guardar tu información. Por favor, intenta de nuevo.'
-      )
+
+      const message = error instanceof Error && error.message.includes('VITE_SUPABASE_URL')
+        ? 'Falta configurar Supabase en Vercel: agrega VITE_SUPABASE_URL y VITE_SUPABASE_ANON_KEY antes de iniciar la evaluación.'
+        : 'Hubo un error al guardar tu información. Por favor, intenta de nuevo.'
+
+      setSubmitError(message)
       form.setIsLoading(false)
     }
   }
