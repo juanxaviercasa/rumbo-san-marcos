@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { Download, Home, AlertCircle } from 'lucide-react'
+import { Download, Home, AlertCircle, Share2, FileText } from 'lucide-react'
 import MedidorBrecha from '../components/MedidorBrecha'
 import DesglosePorArea from '../components/DesglosePorArea'
 import RutaEstudio from '../components/RutaEstudio'
@@ -13,6 +13,8 @@ import {
   classifyPerformance,
   generateStudyRoute,
   getPerformanceByArea,
+  buildStudentReportText,
+  getWhatsAppShareUrl,
 } from '../services/results'
 import type { ExamAttempt, Career } from '../types'
 
@@ -118,6 +120,33 @@ export default function ResultsPage() {
   const { correct, incorrect, blank, gap, referentialScore, performance, studyRoute } = scoreData
   const actualScore = scoreData.score
 
+  const reportText = buildStudentReportText({
+    studentName: examAttempt.studentName,
+    careerName: career.name,
+    faculty: career.faculty,
+    actualScore,
+    referentialScore,
+    gap,
+    performance,
+    studyRoute,
+    performanceByArea: performanceData ?? [],
+  })
+
+  const handleDownloadReport = () => {
+    const blob = new Blob([reportText], { type: 'text/plain;charset=utf-8' })
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = `reporte-${career.name.toLowerCase().replace(/\s+/g, '-')}.txt`
+    link.click()
+    URL.revokeObjectURL(url)
+  }
+
+  const handleShareWhatsApp = () => {
+    const url = getWhatsAppShareUrl(reportText)
+    window.open(url, '_blank', 'noopener,noreferrer')
+  }
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
@@ -215,7 +244,7 @@ export default function ResultsPage() {
 
         {/* Acciones finales */}
         <div className="bg-gradient-to-r from-rumbo-burgundy/10 to-rumbo-light/10 rounded-lg p-8 border border-rumbo-gold/30">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <Link
               to="/"
               className="flex items-center justify-center gap-2 px-6 py-3 bg-white border-2 border-rumbo-burgundy text-rumbo-burgundy font-semibold rounded-lg hover:bg-rumbo-burgundy hover:text-white transition-all"
@@ -225,19 +254,29 @@ export default function ResultsPage() {
             </Link>
 
             <button
-              onClick={() => window.print()}
+              onClick={handleShareWhatsApp}
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transition-all"
+            >
+              <Share2 className="w-5 h-5" />
+              Enviar por WhatsApp
+            </button>
+
+            <button
+              onClick={handleDownloadReport}
               className="flex items-center justify-center gap-2 px-6 py-3 bg-rumbo-burgundy text-white font-semibold rounded-lg hover:bg-rumbo-dark transition-all"
             >
               <Download className="w-5 h-5" />
-              Descargar Resultados
+              Descargar reporte
             </button>
           </div>
 
-          {/* Nota */}
           <div className="mt-6 p-4 bg-white rounded-lg border-l-4 border-rumbo-burgundy">
-            <p className="text-sm text-gray-700">
-              <strong>Próximos pasos:</strong> Sigue la ruta de estudio personalizada para mejorar tu desempeño. Puedes repetir la evaluación en {career.name} cuando estés listo.
-            </p>
+            <div className="flex items-start gap-3">
+              <FileText className="w-5 h-5 text-rumbo-burgundy mt-0.5" />
+              <p className="text-sm text-gray-700">
+                <strong>Próximos pasos:</strong> Sigue la ruta de estudio personalizada para mejorar tu desempeño. Puedes repetir la evaluación en {career.name} cuando estés listo.
+              </p>
+            </div>
           </div>
         </div>
       </div>

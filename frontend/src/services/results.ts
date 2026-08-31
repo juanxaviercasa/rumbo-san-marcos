@@ -219,3 +219,66 @@ export function getPerformanceByArea(
     percentage: (data.correct / data.total) * 100,
   }))
 }
+
+export function buildStudentReportText({
+  studentName,
+  careerName,
+  faculty,
+  actualScore,
+  referentialScore,
+  gap,
+  performance,
+  studyRoute,
+  performanceByArea,
+}: {
+  studentName: string
+  careerName: string
+  faculty: string
+  actualScore: number
+  referentialScore: number
+  gap: number
+  performance: ReturnType<typeof classifyPerformance>
+  studyRoute: ReturnType<typeof generateStudyRoute>
+  performanceByArea: ReturnType<typeof getPerformanceByArea>
+}): string {
+  const topPriorities = studyRoute.priority.slice(0, 5)
+  const areaSummary = performanceByArea
+    .map((area) => `- Área ${area.area}: ${area.correct}/${area.total} correctas (${area.percentage.toFixed(1)}%)`)
+    .join('\n')
+
+  const report = [
+    'RUMBO SAN MARCOS',
+    'Reporte de desempeño diagnóstico',
+    '========================================',
+    `Estudiante: ${studentName}`,
+    `Carrera: ${careerName}`,
+    `Facultad: ${faculty}`,
+    '',
+    `Puntaje obtenido: ${actualScore.toFixed(2)}`,
+    `Puntaje referencial: ${referentialScore}`,
+    `Brecha: ${gap.toFixed(2)}`,
+    `Desempeño: ${performance.message}`,
+    `Porcentaje: ${performance.percentage.toFixed(1)}%`,
+    '',
+    'Resumen por área:',
+    areaSummary || '- Sin datos de área disponibles',
+    '',
+    'Temas de prioridad para reforzar:',
+    ...topPriorities.map(
+      (item, index) => ` ${index + 1}. ${item.topic} (${item.course}) - ${item.issues} errores`
+    ),
+    '',
+    'Recomendación de estudio:',
+    ...studyRoute.studyPlan.map((item) => `- ${item}`),
+    '',
+    `Horas estimadas: ${studyRoute.estimatedHours}`,
+    '',
+    'Este reporte debe utilizarse para reforzar los temas más débiles antes del ingreso a la carrera deseada.',
+  ]
+
+  return report.join('\n')
+}
+
+export function getWhatsAppShareUrl(text: string): string {
+  return `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`
+}

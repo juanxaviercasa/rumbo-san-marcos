@@ -11,6 +11,7 @@
    - `VITE_POCKETBASE_URL=https://tu-backend-url.com`
 
 ### Recomendación de ruta
+
 - Dominio principal: `https://rumbo-san-marcos.vercel.app`
 - Backend: `https://rumbo-san-marcos-pb.onrender.com`
 
@@ -75,10 +76,12 @@ PB_ADMIN_PASSWORD=admin123456
 ## 6. Recomendación de hosting
 
 ### Mejor opción para este proyecto
+
 - Frontend: Vercel
 - Backend: Render o Railway
 
 ### Si quieres algo más estable para producción
+
 - Frontend: Vercel
 - Backend: Railway + volume persistente
 
