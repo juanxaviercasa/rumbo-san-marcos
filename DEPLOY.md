@@ -3,92 +3,74 @@
 ## 1. Frontend en Vercel
 
 1. Conecta el repositorio GitHub.
-2. Selecciona el proyecto y define la carpeta del frontend como `frontend`.
+2. En Vercel, selecciona el proyecto y define la carpeta del frontend como `frontend`.
 3. Framework: `Vite`.
 4. Build command: `npm install && npm run build`
 5. Output directory: `dist`
 6. Variables de entorno:
-   - `VITE_POCKETBASE_URL=https://tu-backend-url.com`
+   - `VITE_SUPABASE_URL=https://tu-proyecto.supabase.co`
+   - `VITE_SUPABASE_ANON_KEY=tu-anon-key`
+   - `VITE_ADMIN_EMAIL=admin@rumbosanmarcos.com`
 
 ### Recomendación de ruta
 
 - Dominio principal: `https://rumbo-san-marcos.vercel.app`
-- Backend: `https://rumbo-san-marcos-pb.onrender.com`
+- Base de datos: Supabase
 
-## 2. Backend PocketBase en Render
+## 2. Base de datos en Supabase
 
-1. Crea un nuevo servicio `Web Service`.
-2. Elige `Docker`.
-3. Conecta este repositorio.
-4. Usa la ruta del Dockerfile: `./backend/Dockerfile`
-5. Expone el puerto `8090`.
-6. Configura variables:
-   - `PB_ADMIN_EMAIL=admin@rumbosanmarcos.com`
-   - `PB_ADMIN_PASSWORD=admin123456`
-   - `PB_PORT=8090`
+1. Crea un nuevo proyecto en Supabase.
+2. Abre SQL Editor.
+3. Ejecuta el contenido de [supabase/schema.sql](supabase/schema.sql).
+4. Revisa Storage y Authentication si quieres agregar administración más adelante.
 
-> Importante: PocketBase necesita persistencia de datos. Si usas un plan gratuito, la persistencia puede ser limitada o no disponible según la plataforma. Para producción estable, hay que usar un plan con volumen persistente.
+### Variables que necesitas
+
+```env
+VITE_SUPABASE_URL=https://tu-proyecto.supabase.co
+VITE_SUPABASE_ANON_KEY=tu-anon-key
+```
 
 ## 3. Configuración del frontend
 
-En [frontend/.env.example](frontend/.env.example) ya está la variable:
+En [frontend/.env.example](frontend/.env.example) ya está el template actualizado:
 
 ```env
-VITE_POCKETBASE_URL=http://localhost:8090
+VITE_SUPABASE_URL=https://your-project.supabase.co
+VITE_SUPABASE_ANON_KEY=your-anon-key
 ```
 
-En producción se reemplaza por la URL real del backend, por ejemplo:
+Copia este archivo a `.env.local` dentro de la carpeta `frontend` y reemplaza los valores reales del proyecto.
 
-```env
-VITE_POCKETBASE_URL=https://rumbo-san-marcos-pb.onrender.com
-```
+## 4. Importar datos iniciales
 
-## 4. Importar schema y datos
+Después de crear la base de datos:
 
-Una vez el backend esté corriendo:
+1. Abre la base en Supabase.
+2. Inserta las carreras y preguntas.
+3. Verifica que las tablas `careers`, `questions`, `exam_attempts` y `audit_logs` existan.
 
-1. Entrar al panel admin: `https://tu-backend-url.com/_/`
-2. Crear el admin si no existe.
-3. Importar el schema de [backend/pb_schema.json](backend/pb_schema.json)
-4. Ejecutar:
-
-```bash
-cd backend
-node seed-import.mjs
-```
-
-Con estas variables:
-
-```bash
-POCKETBASE_URL=https://tu-backend-url.com
-PB_ADMIN_EMAIL=admin@rumbosanmarcos.com
-PB_ADMIN_PASSWORD=admin123456
-```
+Puedes usar el JSON base que ya está en la raíz del proyecto si necesitas cargar contenido de prueba.
 
 ## 5. Validaciones finales
 
-- Frontend en Vercel debe cargar sin 404 en rutas internas.
-- Backend debe responder en `/api/health`.
-- Las colecciones `careers`, `questions`, `exam_attempts` deben existir.
-- Autenticación admin debe funcionar.
-- El flujo desde diagnóstico hasta resultados debe tomar la URL del backend real.
+- El frontend en Vercel debe cargar sin 404 en rutas internas.
+- La app debe leer las carreras y preguntas desde Supabase.
+- El flujo de diagnóstico y examen debe calcular el resultado correctamente.
+- La edición del reporte con WhatsApp y descarga debe funcionar.
 
 ## 6. Recomendación de hosting
 
 ### Mejor opción para este proyecto
 
 - Frontend: Vercel
-- Backend: Render o Railway
+- Base de datos: Supabase
 
-### Si quieres algo más estable para producción
-
-- Frontend: Vercel
-- Backend: Railway + volume persistente
+Esto elimina la dependencia de PocketBase y sigue una arquitectura más moderna y estable para producción.
 
 ## 7. Siguientes tareas del proyecto
 
-- Importar el banco completo de carreras y preguntas.
-- Configurar reglas de acceso por colección.
-- Validar el hook de calificación en PocketBase.
-- Probar flujo de registro, examen y resultados en la URL real.
-- Configurar dominio personalizado.
+- Cargar el banco completo de carreras y preguntas.
+- Probar el flujo real desde registro hasta resultados.
+- Configurar dominio personalizado en Vercel.
+- Enlazar notificaciones por WhatsApp o email cuando la app esté viva.
