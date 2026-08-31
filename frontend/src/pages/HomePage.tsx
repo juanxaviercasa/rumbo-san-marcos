@@ -87,7 +87,7 @@ export default function HomePage() {
 
             <Link
               to="/diagnostico"
-              className="inline-flex items-center rounded-full bg-[#8B1538] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#700f2d]"
+              className="inline-flex items-center rounded-full bg-[#8B1538] px-5 py-2.5 text-sm font-semibold !text-white shadow-sm transition hover:bg-[#700f2d]"
             >
               Iniciar diagnóstico
             </Link>
@@ -114,7 +114,7 @@ export default function HomePage() {
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <Link
                   to="/diagnostico"
-                  className="inline-flex items-center rounded-full bg-[#8B1538] px-6 py-3.5 text-base font-semibold text-white shadow-[0_16px_32px_rgba(139,21,56,0.22)] transition hover:bg-[#700f2d]"
+                  className="inline-flex items-center rounded-full bg-[#8B1538] px-6 py-3.5 text-base font-semibold !text-white shadow-[0_16px_32px_rgba(139,21,56,0.22)] transition hover:bg-[#700f2d]"
                 >
                   Rendir diagnóstico
                 </Link>
@@ -149,12 +149,12 @@ export default function HomePage() {
 
                 <div className="absolute inset-x-8 bottom-7 flex items-center justify-between rounded-2xl border border-[#eadfc9] bg-[#f7f1ea]/95 px-5 py-4 shadow-lg backdrop-blur-sm">
                   <div>
-                    <div className="text-[11px] uppercase tracking-[0.2em] text-[#6c6a67]">Tu brecha</div>
-                    <div className="mt-1 text-3xl font-fraunces font-bold text-[#8B1538]">-180</div>
+                    <div className="text-[11px] uppercase tracking-[0.2em] text-[#6c6a67]">Te faltan</div>
+                    <div className="mt-1 text-3xl font-fraunces font-bold text-[#8B1538]">60</div>
                   </div>
                   <div className="text-right">
                     <div className="text-[11px] uppercase tracking-[0.2em] text-[#6c6a67]">Puntaje</div>
-                    <div className="mt-1 text-xl font-semibold text-[#1d1d1d]">180 / 2000</div>
+                    <div className="mt-1 text-xl font-semibold text-[#1d1d1d]">1540 / 2000</div>
                   </div>
                 </div>
               </div>

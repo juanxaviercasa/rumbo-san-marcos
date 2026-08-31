@@ -53,7 +53,11 @@ h3 {
 
 /* Links */
 a {
-  @apply text-rumbo-burgundy hover:text-rumbo-dark transition-colors;
+  @apply transition-colors;
+}
+
+a:not(.btn-primary):not(.btn-secondary):not(.btn-outline):not([class*='bg-']):not([class*='text-']):not([class*='rounded-']):not([class*='border-']) {
+  @apply text-rumbo-burgundy hover:text-rumbo-dark;
 }
 
 /* Buttons */
@@ -63,6 +67,7 @@ button {
 
 .btn-primary {
   @apply px-6 py-3 bg-rumbo-burgundy text-white rounded-lg hover:bg-rumbo-dark font-medium;
+  color: white !important;
 }
 
 .btn-secondary {
