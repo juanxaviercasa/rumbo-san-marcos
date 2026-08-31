@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: rumbo-san-marcos-pb
+    env: docker
+    plan: free
+    dockerfilePath: ./backend/Dockerfile
+    autoDeploy: true
+    healthCheckPath: /api/health
+    envVars:
+      - key: PB_ADMIN_EMAIL
+        value: admin@rumbosanmarcos.com
+      - key: PB_ADMIN_PASSWORD
+        value: admin123456
+      - key: PB_PORT
+        value: "8090"
+      - key: PB_DATA_DIR
+        value: /pb_data
+    disk:
+      name: pb-data
+      mountPath: /pb_data
+      sizeGB: 1
