@@ -159,7 +159,7 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div className="mt-2 border-t border-[#e5d8ca] pt-2 text-[11px] font-medium uppercase tracking-[0.16em] text-[#5d5854]">
-                    Para alcanzar vacante en Medicina
+                    Para una vacante en tu carrera objetivo
                   </div>
                 </div>
               </div>
@@ -204,12 +204,12 @@ export default function HomePage() {
               {areaCards.map((area) => (
                 <article
                   key={area.code}
-                  className="flex h-full min-h-[240px] flex-col rounded-[24px] border border-[#e5ddd4] bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                  className="flex h-full min-h-[240px] flex-col overflow-hidden rounded-[24px] border border-[#e5ddd4] bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
                 >
                   <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#f6ead7] font-fraunces text-xl font-bold text-[#8B1538]">
                     {area.code}
                   </div>
-                  <h3 className="mb-3 text-xl font-fraunces leading-tight text-[#1d1d1d] sm:min-h-[96px]">
+                  <h3 className="mb-3 break-words text-xl font-fraunces leading-[1.12] text-[#1d1d1d] sm:min-h-[96px]">
                     {area.title}
                   </h3>
                   <p className="mt-auto text-sm leading-6 text-[#56534f]">{area.description}</p>
