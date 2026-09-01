@@ -68,18 +68,18 @@ export default function HomePage() {
     <div className="min-h-screen bg-[#f5f1ec] text-[#1d1d1d]">
       <header className="border-b border-[#e7dfd7] bg-[#f5f1ec] text-[#1d1d1d]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between py-5">
-            <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#8B1538] text-sm font-black text-white shadow-sm">
+          <div className="flex items-center justify-between gap-3 py-4 sm:py-5">
+            <div className="flex min-w-0 items-center gap-3">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#8B1538] text-sm font-black text-white shadow-sm sm:h-11 sm:w-11">
                 R
               </div>
-              <div>
-                <div className="text-xl font-fraunces font-bold leading-none">Rumbo San Marcos</div>
-                <div className="text-[10px] uppercase tracking-[0.18em] text-[#6c6a67]">Diagnóstico de admisión</div>
+              <div className="min-w-0">
+                <div className="truncate text-base font-fraunces font-bold leading-none sm:text-xl">Rumbo San Marcos</div>
+                <div className="text-[9px] uppercase tracking-[0.14em] text-[#6c6a67] sm:text-[10px]">Diagnóstico de admisión</div>
               </div>
             </div>
 
-            <nav className="hidden items-center gap-8 text-sm font-medium text-[#2d2d2d] md:flex">
+            <nav className="hidden items-center gap-6 text-sm font-medium text-[#2d2d2d] md:flex">
               <a href="#proceso" className="transition hover:text-[#8B1538]">Cómo funciona</a>
               <a href="#areas" className="transition hover:text-[#8B1538]">Áreas UNMSM</a>
               <a href="#metodo" className="transition hover:text-[#8B1538]">Método</a>
@@ -87,7 +87,7 @@ export default function HomePage() {
 
             <Link
               to="/diagnostico"
-              className="inline-flex items-center rounded-full bg-[#8B1538] px-5 py-2.5 text-sm font-semibold !text-white shadow-sm transition hover:bg-[#700f2d]"
+              className="inline-flex shrink-0 items-center rounded-full bg-[#8B1538] px-3 py-2.5 text-xs font-semibold !text-white shadow-sm transition hover:bg-[#700f2d] sm:px-5 sm:text-sm"
             >
               Iniciar diagnóstico
             </Link>
@@ -111,16 +111,16 @@ export default function HomePage() {
                 Un diagnóstico práctico y personalizado para medir tu nivel real, entender tu brecha y planear mejor tu preparación.
               </p>
 
-              <div className="mt-8 flex flex-wrap items-center gap-4">
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
                 <Link
                   to="/diagnostico"
-                  className="inline-flex items-center rounded-full bg-[#8B1538] px-6 py-3.5 text-base font-semibold !text-white shadow-[0_16px_32px_rgba(139,21,56,0.22)] transition hover:bg-[#700f2d]"
+                  className="inline-flex w-full items-center justify-center rounded-full bg-[#8B1538] px-6 py-3.5 text-base font-semibold !text-white shadow-[0_16px_32px_rgba(139,21,56,0.22)] transition hover:bg-[#700f2d] sm:w-auto"
                 >
                   Rendir diagnóstico
                 </Link>
                 <a
                   href="#proceso"
-                  className="inline-flex items-center rounded-full border border-[#8B1538] bg-transparent px-6 py-3.5 text-base font-semibold text-[#8B1538] transition hover:bg-[#8B1538] hover:text-white"
+                  className="inline-flex w-full items-center justify-center rounded-full border border-[#8B1538] bg-transparent px-6 py-3.5 text-base font-semibold text-[#8B1538] transition hover:bg-[#8B1538] hover:text-white sm:w-auto"
                 >
                   Ver proceso
                 </a>
@@ -147,14 +147,19 @@ export default function HomePage() {
                   className="h-[540px] w-full rounded-[22px] object-cover"
                 />
 
-                <div className="absolute inset-x-8 bottom-7 flex items-center justify-between rounded-2xl border border-[#eadfc9] bg-[#f7f1ea]/95 px-5 py-4 shadow-lg backdrop-blur-sm">
-                  <div>
-                    <div className="text-[11px] uppercase tracking-[0.2em] text-[#6c6a67]">Te faltan</div>
-                    <div className="mt-1 text-3xl font-fraunces font-bold text-[#8B1538]">60</div>
+                <div className="absolute inset-x-8 bottom-7 rounded-2xl border border-[#eadfc9] bg-[#f7f1ea]/95 px-5 py-4 shadow-lg backdrop-blur-sm">
+                  <div className="flex items-center justify-between gap-3">
+                    <div>
+                      <div className="text-[10px] uppercase tracking-[0.22em] text-[#6c6a67]">Te faltan</div>
+                      <div className="mt-1 text-3xl font-fraunces font-bold text-[#8B1538]">357</div>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-[10px] uppercase tracking-[0.22em] text-[#6c6a67]">Puntaje</div>
+                      <div className="mt-1 text-xl font-semibold text-[#1d1d1d]">1540</div>
+                    </div>
                   </div>
-                  <div className="text-right">
-                    <div className="text-[11px] uppercase tracking-[0.2em] text-[#6c6a67]">Puntaje</div>
-                    <div className="mt-1 text-xl font-semibold text-[#1d1d1d]">1540 / 2000</div>
+                  <div className="mt-2 border-t border-[#e5d8ca] pt-2 text-[11px] font-medium uppercase tracking-[0.16em] text-[#5d5854]">
+                    Para alcanzar vacante en Medicina
                   </div>
                 </div>
               </div>
@@ -195,17 +200,19 @@ export default function HomePage() {
               </h2>
             </div>
 
-            <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
               {areaCards.map((area) => (
                 <article
                   key={area.code}
-                  className="rounded-[24px] border border-[#e5ddd4] bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                  className="flex h-full min-h-[240px] flex-col rounded-[24px] border border-[#e5ddd4] bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
                 >
                   <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#f6ead7] font-fraunces text-xl font-bold text-[#8B1538]">
                     {area.code}
                   </div>
-                  <h3 className="mb-3 text-xl font-fraunces text-[#1d1d1d]">{area.title}</h3>
-                  <p className="text-sm leading-6 text-[#56534f]">{area.description}</p>
+                  <h3 className="mb-3 text-xl font-fraunces leading-tight text-[#1d1d1d] sm:min-h-[96px]">
+                    {area.title}
+                  </h3>
+                  <p className="mt-auto text-sm leading-6 text-[#56534f]">{area.description}</p>
                 </article>
               ))}
             </div>
